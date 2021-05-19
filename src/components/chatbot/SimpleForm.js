@@ -30,7 +30,7 @@ class SimpleForm extends Component{
           steps = {[
             {
               id: 'intro',
-              message: 'Do you agree to Terms and Condition?',
+              message: 'Do you agree to suck dick before you sit on it?',
               trigger: 'intro-user',
             },
             {
