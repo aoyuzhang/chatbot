@@ -42,7 +42,7 @@ class SimpleForm extends Component{
             },
             {
               id: 'yes-response',
-              message:'Great!',
+              message:'Great, the gr8t one will show you the path to blue hell!',
               trigger: 'q-name',
             },
             {
@@ -72,7 +72,7 @@ class SimpleForm extends Component{
             },
             {
               id: "q-email",
-              message: 'What is your email?',
+              message: 'You put your email adress so that you can receive extra shiny boots',
               trigger:"email",
             },
             {
@@ -91,7 +91,7 @@ class SimpleForm extends Component{
             },
             {
               id: 'q-zip',
-              message: 'What is your 5 digits or 9 digits zip code?',
+              message: 'Give the zip(5digs) so that you get to experience the real bottom.',
               trigger: 'zip',
 
             },
@@ -112,7 +112,7 @@ class SimpleForm extends Component{
             },
             {
               id: 'q-phone',
-              message: "What is your phone number?",
+              message: "Finally, your phone number is required to ?",
               trigger: 'phone',
             },
             {
@@ -143,7 +143,7 @@ class SimpleForm extends Component{
             },
             {
               id: 'no-submit',
-              message: 'Your information was not submitted.',
+              message: 'It dooes matter if u submit or not!',
               end: true,
             },
             {
