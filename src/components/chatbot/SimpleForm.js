@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
+import Post from './Post';
+
+const config ={
+  width: "400px",
+  height: "500px",
+}
+
 
 const theme = {
   background: '#f5f8fb',
@@ -120,9 +127,33 @@ class SimpleForm extends Component{
                   return "Please enter a valid phone number.";
                 }
               },
-              end:true,
+              trigger: 'q-submit',
             },
+            {
+              id: 'q-submit',
+              message: 'Do you wish to submit?',
+              trigger: 'submit'
+            },
+            {
+              id: 'submit',
+              option:[
+                {value: 'y', label:'Yes', trigger:'end-message'},
+                {value: 'n', label: 'no', trigger: 'no-submit'},
+              ]
+            },
+            {
+              id: 'no-submit',
+              message: 'Your information was not submitted.',
+              end: true,
+            },
+            {
+              id: 'end-message',
+              component: <Post />,
+              asMessage: true,
+              end: true
+            }
           ]}
+          {...config}
         />
       </ThemeProvider>
     );
