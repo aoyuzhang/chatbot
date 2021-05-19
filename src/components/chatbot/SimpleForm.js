@@ -36,8 +36,8 @@ class SimpleForm extends Component{
             {
               id: 'intro-user',
               options:[
-                {value:'y', label:'yes', trigger:'yes-response'},
-                {value: 'n', label:'No', trigger:'no-response'},
+                {value:'y0', label:'yes', trigger:'yes-response'},
+                {value: 'n0', label:'No', trigger:'no-response'},
               ]
             },
             {
@@ -136,7 +136,7 @@ class SimpleForm extends Component{
             },
             {
               id: 'submit',
-              option:[
+              options:[
                 {value: 'y', label:'Yes', trigger:'end-message'},
                 {value: 'n', label: 'no', trigger: 'no-submit'},
               ]
