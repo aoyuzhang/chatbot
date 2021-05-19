@@ -9,13 +9,28 @@ class SimpleForm extends Component{
         steps = {[
           {
             id: 'intro',
-            message: 'Hello world. I am a chatbot.',
+            message: 'Do you agree to Terms and Condition?',
+            trigger: 'intro-user',
+          },
+          {
+            id: 'intro-user',
+            options:[
+              {value:'y', label:'yes', trigger:'yes-response'},
+              {value: 'n', label:'No', trigger:'no-response'},
+            ]
+          },
+          {
+            id: 'yes-response',
+            message:'Great!',
+            end: true,
+          },
+          {
+            id: 'no-response',
+            message: 'Sorry to hear that.',
             end: true,
           },
         ]}
-
       />
-
     );
   }
 
