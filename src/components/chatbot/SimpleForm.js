@@ -91,7 +91,7 @@ class SimpleForm extends Component{
             },
             {
               id: 'q-zip',
-              message: 'What is your zip code?',
+              message: 'What is your 5 digits or 9 digits zip code?',
               trigger: 'zip',
 
             },
