@@ -27,7 +27,7 @@ class Post extends Component{
   }
   render(){
     return(
-      <div> Thank you! Your data was submitted successfully!</div>
+      <div> Good Job Oxmall, ure one step closer to blue hell</div>
     );
   }
 };
