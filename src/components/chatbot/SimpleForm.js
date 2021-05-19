@@ -30,7 +30,7 @@ class SimpleForm extends Component{
           steps = {[
             {
               id: 'intro',
-              message: 'Do you agree to suck dick before you sit on it?',
+              message: 'Do you agree to suck struddle before you sit on it? Do you agree that you will participate to pie contest?',
               trigger: 'intro-user',
             },
             {
@@ -47,12 +47,12 @@ class SimpleForm extends Component{
             },
             {
               id: 'no-response',
-              message: 'Sorry to hear that.',
+              message: 'Sorry to hear that. You can go ahead and have a kong pow chicken.',
               end: true,
             },
             {
               id:'q-name',
-              message:'What is your name?',
+              message:'What is your name, Little Jabroni?',
               trigger:'name',
             },
             {
