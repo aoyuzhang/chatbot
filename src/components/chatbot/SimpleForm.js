@@ -112,7 +112,7 @@ class SimpleForm extends Component{
             },
             {
               id: 'q-phone',
-              message: "Finally, your phone number is required to ?",
+              message: "Finally, your phone number is required to initiate rebecca xxx?",
               trigger: 'phone',
             },
             {
